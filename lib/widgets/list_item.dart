@@ -12,7 +12,7 @@ class ListItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       margin: const EdgeInsets.only(bottom: 20),
-      height: 200,
+      height: 250,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
@@ -31,11 +31,11 @@ class ListItem extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
           Text(
-            product.description,
+            product.price.toString(),
             maxLines: 3,
             style: const TextStyle(
               color: Colors.white,
-              fontSize: 12,
+              fontSize: 18,
             ),
             overflow: TextOverflow.ellipsis,
           ),

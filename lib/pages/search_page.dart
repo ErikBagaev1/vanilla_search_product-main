@@ -47,6 +47,9 @@ class _SearchPageState extends State<SearchPage> {
       });
     } catch (error) {
       setState(() {
+        print("-------------------------------------");
+        print(error);
+        print("-------------------------------------");
         _searchStatus = SearchStatus.failure;
       });
     }
